@@ -24,7 +24,7 @@ const corsOption = {
 app.use(cors(corsOption));
 app.use('/storage', express.static('storage'));
 
-const PORT = process.env.PORT || 6000;
+const PORT = 6000 || process.env.PORT;
 
 connectDB();
 

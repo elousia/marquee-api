@@ -2,7 +2,7 @@ const router = require('express').Router();
 const authController = require('./controllers/auth-controller');
 const activateController = require('./controllers/activate-controller');
 const roomsController = require('./controllers/rooms-controller');
-const authMiddleware = require('./middleware/auth-middleware');
+const authMiddleware = require('./middleware/auth');
 
 router.post('/api/send-otp', authController.sendOtp);
 router.post('/api/verify-otp', authController.verifyOtp);
